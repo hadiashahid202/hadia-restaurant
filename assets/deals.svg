@@ -1,0 +1,38 @@
+<svg width="900" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="midnightGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#556270"></stop>
+      <stop offset="100%" stop-color="#4ecdc4"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Left Line -->
+  <line x1="40" y1="90" x2="250" y2="90" stroke="#4ecdc4" stroke-width="2"></line>
+
+  <!-- Right Line -->
+  <line x1="650" y1="90" x2="860" y2="90" stroke="#4ecdc4" stroke-width="2"></line>
+
+  <!-- Left Diamond -->
+  <rect x="265" y="80" width="20" height="20" transform="rotate(45 275 90)" fill="#4ecdc4"></rect>
+
+  <!-- Right Diamond -->
+  <rect x="615" y="80" width="20" height="20" transform="rotate(45 625 90)" fill="#4ecdc4"></rect>
+
+  <!-- Badge -->
+  <rect x="290" y="50" width="320" height="80" rx="40" fill="url(#midnightGradient)" filter="url(#glow)"></rect>
+
+  <!-- Text -->
+  <text x="450" y="90" text-anchor="middle" dominant-baseline="middle" fill="#ffffff" font-size="30" font-weight="700" font-family="Georgia, serif" letter-spacing="2">
+      Midnight Deals
+  </text>
+
+</svg>

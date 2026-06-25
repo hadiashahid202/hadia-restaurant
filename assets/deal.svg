@@ -1,0 +1,36 @@
+<svg width="700" height="180" viewBox="0 0 700 180" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="midnightGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#556270"></stop>
+      <stop offset="100%" stop-color="#4ecdc4"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Decorative Lines -->
+  <line x1="40" y1="90" x2="180" y2="90" stroke="#4ecdc4" stroke-width="3"></line>
+
+  <line x1="520" y1="90" x2="660" y2="90" stroke="#4ecdc4" stroke-width="3"></line>
+
+  <!-- Diamond Decorations -->
+  <rect x="190" y="80" width="20" height="20" transform="rotate(45 200 90)" fill="#4ecdc4"></rect>
+
+  <rect x="490" y="80" width="20" height="20" transform="rotate(45 500 90)" fill="#4ecdc4"></rect>
+
+  <!-- Main Badge -->
+  <rect x="220" y="50" width="260" height="80" rx="40" fill="url(#midnightGradient)" filter="url(#glow)"></rect>
+
+  <!-- Text -->
+  <text x="350" y="100" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="24" font-weight="700" font-family="Playfair Display, Georgia, serif">
+        Midnight Deals
+  </text>
+
+</svg>
