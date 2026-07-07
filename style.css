@@ -715,3 +715,75 @@ textarea {
     margin: 10px 0px;
   }
 }
+
+/* media query 768px*/
+@media (max-width: 768px) {
+  .main-section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .nav-list {
+    padding: 0px;
+  }
+  .nav-logo {
+    width: 230px;
+  }
+  .head {
+    width: auto;
+  }
+  .head h1 {
+    font-size: 28px;
+  }
+  .food-container .food-plate {
+    width: 700px;
+  }
+  .reference-title h3 {
+    font-size: 20px;
+  }
+  .reference-title p {
+    font-size: 15px;
+  }
+  .reference-pic .dish {
+    width: 230px;
+    height: 230px;
+  }
+  .sliding {
+    width: auto;
+  }
+  .deals {
+    flex-direction: column;
+  }
+  .deal-items {
+    flex-direction: column;
+    width: auto;
+  }
+  .contact-form {
+    flex-direction: column;
+  }
+  .contact-us {
+    width: auto;
+    margin-bottom: 50px;
+  }
+  .footer-items {
+    font-size: 15px;
+  }
+}
+
+/* media query 1024px*/
+@media (max-width: 1024px) {
+  .main-section {
+    margin: 10px 40px;
+  }
+  .head {
+    width: 70%;
+  }
+  .sliding {
+    width: auto;
+  }
+  .contact-section {
+    margin: 0px;
+  }
+  .contact-us {
+    width: 38%;
+  }
+}
