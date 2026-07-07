@@ -764,6 +764,9 @@ textarea {
     width: auto;
     margin-bottom: 50px;
   }
+  .footer {
+    gap: 20px;
+  }
   .footer-items {
     font-size: 15px;
   }
