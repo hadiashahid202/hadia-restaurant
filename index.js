@@ -36,3 +36,17 @@ const observer = new IntersectionObserver(
 document
   .querySelectorAll(".hidden-right, .hidden-up, .hidden-down")
   .forEach((el) => observer.observe(el));
+
+// sidebar
+
+const sidebar = document.getElementById("sidebar");
+const menuBtn = document.querySelector(".menu");
+const closeBtn = document.querySelector(".slide-sidebar");
+
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
