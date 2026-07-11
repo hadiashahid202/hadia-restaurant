@@ -82,13 +82,13 @@ p {
 }
 
 #sidebar {
-  position: fixed;
+  position: absolute;
   left: -100%;
-  top: 15%;
+  top: 8%;
   transition: left 0.4s ease;
   background: #013746;
   padding: 30px 120px;
-  z-index: 999;
+  z-index: 1000;
   width: auto;
   border-radius: 10px;
 }
@@ -111,6 +111,13 @@ p {
   display: flex;
   gap: 30px;
   align-items: center;
+  padding: 0px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 .menu {
@@ -155,6 +162,7 @@ p {
 
 .head h1 {
   font-size: 30px;
+  text-align: center;
 }
 
 .span-tag {
@@ -249,6 +257,7 @@ p {
 
 .menu-title p {
   line-height: 30px;
+  text-align: center;
 }
 
 .slider {
@@ -312,6 +321,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 5px 10px;
+  align-items: center;
 }
 
 .menu-name button {
@@ -555,8 +565,8 @@ textarea {
 @media (max-width: 475px) {
   /* nav-section */
   .main-section {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .nav-logo {
     width: 200px;
@@ -570,7 +580,7 @@ textarea {
   .menu {
     display: block;
   }
-  /* her-section */
+  /* hero-section */
   .hero-section {
     margin-top: 20px;
   }
@@ -579,6 +589,7 @@ textarea {
   }
   .head h1 {
     font-size: 18px;
+    text-align: center;
   }
   .main-header {
     margin-left: 20px;
@@ -600,6 +611,7 @@ textarea {
   }
   .reference-title p {
     font-size: 10px;
+    cursor: pointer;
   }
   .reference-pic .dish {
     width: 80px;
@@ -618,6 +630,7 @@ textarea {
   .menu-title p {
     font-size: 10px;
     line-height: 15px;
+    text-align: center;
   }
   .slider-track {
     width: 200px;
@@ -627,7 +640,7 @@ textarea {
     width: 100%;
   }
   .sliding img {
-    width: 120px;
+    width: 130px;
     height: 80px;
   }
   .menu-name {
@@ -652,6 +665,7 @@ textarea {
   .deal-section {
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 0px;
   }
   .deal-logo img {
     width: 330px;
@@ -692,6 +706,9 @@ textarea {
   }
   .contact-us h2 {
     font-size: 20px;
+  }
+  .contact-us p {
+    font-size: 12px;
   }
   .contact-us li {
     margin: 20px 0px;
@@ -790,6 +807,10 @@ textarea {
   .contact-us {
     width: auto;
     margin-bottom: 50px;
+  }
+  .footer-section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .footer {
     gap: 20px;
