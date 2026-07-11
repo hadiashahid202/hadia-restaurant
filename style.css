@@ -84,7 +84,7 @@ p {
 #sidebar {
   position: absolute;
   left: -100%;
-  top: 8%;
+  top: 15%;
   transition: left 0.4s ease;
   background: #013746;
   padding: 30px 120px;
